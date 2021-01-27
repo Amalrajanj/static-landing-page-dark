@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #262A2B;
+  width: 100%;
+  height: 100vh;
+  color: #FEFEFE;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.container {
+  padding: 3rem 3rem;
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header li {
+  margin: auto 2rem;
+}
+
+.header li a, .togglePage li a {
+  color: #FEFEFE;
+}
+
+.header button, .login {
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 6px 1rem;
+  opacity: .9;
+  font-size: 1.5rem;
+  color: #ff000d;
+  font-weight: 800;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #222627, #292d2e);
+  -webkit-box-shadow: 4px 4px 10px #0f1111, -4px -4px 10px #3d4345;
+          box-shadow: 4px 4px 10px #0f1111, -4px -4px 10px #3d4345;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.login:hover, .join:hover {
+  -webkit-box-shadow: -4px -4px 10px #0f1111, 4px 4px 10px #3d4345;
+          box-shadow: -4px -4px 10px #0f1111, 4px 4px 10px #3d4345;
+}
+
+.contentBody {
+  margin-top: 13rem;
+}
+
+.contentBody h1 span {
+  opacity: .8;
+  font-weight: 100;
+}
+
+.contentBody p {
+  margin: 6px 0;
+  opacity: .5;
+}
+
+.contentBody button {
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 6px 1rem;
+  opacity: .9;
+  font-size: 1.5rem;
+  color: #ff000d;
+  font-weight: 800;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #222627, #292d2e);
+  -webkit-box-shadow: 4px 4px 10px #0f1111, -4px -4px 10px #3d4345;
+          box-shadow: 4px 4px 10px #0f1111, -4px -4px 10px #3d4345;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.creditCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 5rem;
+  bottom: 8rem;
+  height: 400px;
+  width: 600px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cardFront {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(255, 255, 255, 0.966);
+  width: 508px;
+  height: 314px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.cardFront:before {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 2rem;
+  right: 40px;
+  opacity: .7;
+}
+
+.cardFront:after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 2rem;
+  right: 80px;
+  opacity: .7;
+}
+
+.cardName {
+  position: absolute;
+  left: 1rem;
+  margin: 1rem auto;
+}
+
+.bankName {
+  position: absolute;
+  right: 1rem;
+  margin: 1rem auto;
+}
+
+.chipImg {
+  max-width: 55px;
+  top: 4rem;
+  position: absolute;
+  left: 1rem;
+}
+
+.cardNumber {
+  position: absolute;
+  top: 8rem;
+  margin: .5rem auto;
+  left: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: .3rem;
+}
+
+.validityFrom {
+  position: absolute;
+  bottom: 2.8rem;
+  left: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  font-size: .5rem;
+  opacity: .7;
+}
+
+.validityFrom span, .validityTill span {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.validityTill {
+  position: absolute;
+  bottom: 2.8rem;
+  left: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  font-size: .5rem;
+  opacity: .7;
+}
+
+.accountHolder {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.menuL1, .menuL2, .menuL3 {
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  margin: 5px 1rem;
+}
+
+.menuL2 {
+  background-color: red;
+}
+
+.togglePage {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.togglePage ul li a {
+  font-size: 2rem;
+}
+
+.togglePage ul li a:hover {
+  color: rgba(255, 0, 0, 0.788);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.togglePage button {
+  font-size: 2rem;
+  position: relative;
+  left: -19px;
+}
+
+.menuClose {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+.menuClose:hover .closeL {
+  background-color: red;
+}
+
+.closeL1, .closeL2 {
+  width: 47px;
+  height: 5px;
+  background-color: white;
+}
+
+.closeL1 {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.closeL2 {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+@media only screen and (min-width: 750px) {
+  .menuIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .creditCard {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header ul {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
